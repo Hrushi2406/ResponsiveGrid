@@ -1,0 +1,217 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgba(0,0,0,0.8);
+	padding: 10px;
+	max-width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	/* min-height: 100%; */
+	margin-bottom: 1000px;
+
+}
+
+header{
+	width: 100%;
+	height: 200px;
+	color: rgba(225,225,225,0.5);
+	text-align: center;
+}
+
+.t1{
+	font-size: 32px;
+}
+
+
+div{
+	margin: 3px;
+	float: left;
+	width: 28.5%;
+	height: 400px;
+	transition: 0.5s;
+}
+
+.text{
+	position: absolute;
+	font-size: 50px;
+	z-index: -10;
+	top: 72%;
+	left: 4%;
+	color: rgba(225,225,225,0.5);
+	letter-spacing: 10px;
+	transition: 0.5s;
+}
+
+.text1{
+	position: absolute;
+	font-size: 3rem;
+	z-index: -10;
+	left: 81.5%;
+	top: 80%;
+	transform: rotate(90deg);
+	color: rgba(225,225,225,0.5);
+	letter-spacing: 8px;
+	transition: 0.5s;
+}
+
+.photography{
+	z-index: -1;
+	position: relative;
+	top: calc(50% - 5%);
+	font-size: 30px;
+	transition: 0.5s;
+	color: white;
+}
+
+.layer{
+	width: 100%;
+	height: 100%;
+position: relative;
+right: 3px;
+bottom: 3px;
+
+	text-align: center;
+	transition: 0.5s;
+}
+
+.d1{
+	background-image: url("https://images.pexels.com/photos/1478419/pexels-photo-1478419.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	background-size: cover;
+	background-position: center;
+
+}
+
+.d2{
+	background-image: url("https://images.pexels.com/photos/37859/sailing-ship-vessel-boat-sea-37859.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	background-size: cover;
+	background-position: center;
+}
+
+
+.d3
+{
+	background-image: url("https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	background-size: cover;
+	background-position: center;
+	width: 40.6%;
+	height: 806px;
+}
+
+.d4
+{
+	background-image: url("https://images.pexels.com/photos/2410327/pexels-photo-2410327.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500");
+	background-size: cover;
+	background-position: center;
+	width: 57.6%;
+	transition: 0.5s;
+}
+
+.d5
+{
+	width: 40.5%;
+	background-image: url("https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500");
+	background-size: cover;
+	background-position: center;
+}
+.d6
+{
+	background-image: url("https://images.pexels.com/photos/205325/pexels-photo-205325.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	background-size: cover;
+	background-position: center;
+}
+.d7
+{
+width: 40.6%;
+background-image: url("https://images.pexels.com/photos/1685114/pexels-photo-1685114.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+background-size: cover;
+background-position: center;
+}
+.d8
+{
+	background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500");
+	background-size: cover;
+	background-position: center;
+}
+
+.d1:hover
+{
+	width: 30%;
+	height: 806px;
+	box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+.d1:hover ~ .d3
+{
+	width: 38%;
+	height: 400px;
+}
+
+.d2:hover{
+	width: 38%;
+	height: 410px;
+
+	box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.5);
+}
+.d2:hover ~ .d3
+{
+	width: 30%;
+	height: 400px;
+}
+
+.d3:hover{
+	height: 700px;
+	box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.5);
+}
+.d3:hover ~ .text
+{
+	top: 550px;
+}
+
+.d4:hover{
+height:806px;
+box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+.layer:hover {
+	background-color: rgba(0,0,0,0.6);
+	box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.5);
+}
+.layer:hover .photography{
+	z-index: 1;
+}
+
+.d6:hover{
+	width: 40.5%;
+	box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+.d6:hover + .d7{
+	width: 28.5%;
+}
+
+.d7:hover {
+width: 45%;
+box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+.d7:hover + .d8{
+	width: 24.1%;
+}
+
+.d8:hover{
+	box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+
+
+@media only screen and (max-width: 800px) {
+body{
+	width: 100%;
+}
+  div {
+    width: 100%;
+  }
+.text{display: none;}
+.text1{display: none;}}
